@@ -39,8 +39,7 @@ Geographic value concentration by sublocality
 
 
 ### Data Source
-Dataset: New York Housing Market (
-Kaggle)[https://www.kaggle.com/datasets/nelgiriyewithana/new-york-housing-market]
+Dataset: New York Housing Market [https://www.kaggle.com/datasets/nelgiriyewithana/new-york-housing-market](kaggle)
 Size: 4,801 listings (4,587 after removing 214
 duplicates)
 Key features:
