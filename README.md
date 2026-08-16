@@ -199,9 +199,19 @@ Analytics Press.
 Healy, K. (2018). Data Visualization: A Practical
 Introduction. Princeton University Press.
 Nelgiriyewithana, N. (2024). New York Housing
-Market [Data set]. Kaggle.
+Market Kaggle.
 Tukey, J. W. (1977). Exploratory Data Analysis.
 Addison-Wesley.
+
+
+
+
+
+
+
+
+
+
 
 dataset
 └── README.md                  # This file
