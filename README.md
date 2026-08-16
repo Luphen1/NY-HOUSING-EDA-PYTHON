@@ -2,7 +2,7 @@
 
 
 
-Dataset contains prices of New York houses, providing valuable insights into the real estate market in the region. It includes field such as broker titles, house types, prices, number of bedrooms and bathrooms, property square footage, addresses, state, administrative and local areas, street names, and geographical coordinates.
+Dataset contains prices of New York houses, providing valuable insights into the real estate market in the region. It includes field such as **broker titles**, **house types**, **prices**, **number of bedrooms and bathrooms**, **property square footage**, **addresses**, **state**, **administrative and local areas**, **street names**, and **geographical coordinates**.
 
 
 
@@ -11,9 +11,9 @@ Dataset contains prices of New York houses, providing valuable insights into the
 
 Exploratory data analysis of the New York housing
 market, examining price, size, and location patterns
-across 4,587 property listings. Built as part of IU
-International University of Applied Sciences'
-DLBDSEDAV01 (Exploratory Data Analysis and
+across **4,5878** property listings. Built as part of IU
+International University of Applied Sciences
+**DLBDSEDAV01** (Exploratory Data Analysis and
 Visualization) coursework.
 
 
@@ -31,7 +31,7 @@ outlier treatment
 Covariance and correlation between price,
 property size, bedrooms, and bathrooms
 A self-engineered 
-PRICE_PER_SQFT
+**PRICE_PER_SQFT**
  feature to
 normalize value across differently sized
 properties
@@ -39,51 +39,52 @@ Geographic value concentration by sublocality
 
 
 ### Data Source
-Dataset: New York Housing Market (https://www.kaggle.com/datasets/nelgiriyewithana/new-york-housing-market)[kaggle]
-Size: 4,801 listings (4,587 after removing 214
+- Dataset: New York Housing Market [kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/new-york-housing-market)
+- Size: 4,801 listings (4,587 after removing 214
 duplicates)
-Key features:
-PRICE 
+- Key features:
+**PRICE** 
 , 
-BEDS 
+**BEDS**
 , 
-TYPE 
+**TYPE** 
 , 
-BATH 
+**BATH** 
 , 
-SUBLOCALITY 
+**SUBLOCALITY** 
 , 
-PROPERTYSQFT 
+**PROPERTYSQFT** 
 ,
-LOCALITY 
+**LOCALITY**
 , 
-LATITUDE 
+**LATITUDE** 
 ,
-LONGITUDE
+**LONGITUDE**
 
 
 ### Tools
-Language: Python
-Libraries: Pandas, NumPy, Matplotlib, Seaborn
-Environment: Jupyter Notebook
+- Language: Python
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn
+- Environment: Jupyter Notebook
 
 
 ### Data Cleaning & Preparation
-Removed 214 duplicate records
-Verified no missing values across all columns
-Identified outliers visually via boxplots, then
-treated using the IQR method (values capped, not
-deleted, at Q1 − 1.5×IQR and Q3 + 1.5×IQR)
+- Removed 214 duplicate records
+- Verified no missing values across all columns
+- Identified outliers visually via boxplots, then
+- treated using the IQR method (values cappe d, not
+deleted, at Q1 − 1.5×IQR and Q3 + 1.5×IQR).
+
 Column
 Values Capped
-PRICE
+**PRICE
 BEDS
 528
 218
 BATH
 PROPERTYSQFT
 108
-374
+374**
 Capping was chosen over deletion to preserve sample
 size while limiting the influence of extreme values —
 high-end listings represent a real market segment, not
@@ -94,9 +95,9 @@ statistical influence.
 
 ### Key Insights
 1. Price remains right-skewed even after treatment.
-PRICE's mean ($1,144,499.90) sits well above its
-median ($825,000), and skewness dropped from
-65.35 (raw) to 1.06 (capped) — a >60-fold reduction
+**PRICE's mean ($1,144,499.90)** sits well above its
+**median ($825,000)**, and skewness dropped from
+**65.35 (raw)** to **1.06 (capped)** — a >60-fold reduction
 that confirms a small number of high-end listings
 dominate the raw distribution.
 2. Bathroom count predicts price more strongly than
@@ -108,7 +109,7 @@ as a proxy for build quality or property tier rather than
 being purely a size signal.
 3. Location drives per-square-foot value more than
 any single structural feature. Manhattan
-($1,220.58/sqft) and Dumbo ($1,200.54/sqft) lead the
+**($1,220.58/sqft) and Dumbo ($1,200.54/sqft) lead the
 market by a wide margin, with a clear drop-off to the
 rest of the top 10 (roughly $530–$820/sqft) —
 indicating concentrated, location-specific premiums
