@@ -202,9 +202,6 @@ Nelgiriyewithana, N. (2024). New York Housing
 Market [Data set]. Kaggle.
 Tukey, J. W. (1977). Exploratory Data Analysis.
 Addison-Wesley.
-Repository Structure
-├── NY_Housing_Task1_1.ipynb   # Full 
-analysis notebook
-├── NY-House-Dataset.csv       # Source 
+
 dataset
 └── README.md                  # This file
