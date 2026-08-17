@@ -20,29 +20,14 @@ Visualization) coursework examination project.
 ---------------------------------------------------------------------------------
 ### Table of contents
 
-
-- **[Project Overview](#Project-Overview)**
-
-  
-- **[Data Source](#Data_Source)**
-
-  
-- **[Tools](#Tools)**
-
-  
-- **[Data Cleaning / Preparation](#Data_Cleaning_/Preparation)**
-
-  
-- **[Key Insights](#Key_Insights)**
-
-  
-- **[Visualizations](#Visualizations)**
-
-  
-- **[Methodology Notes](#Methodology_Notes)**
-
-  
-- **[References](#References)**
+- **[Project Overview](#project-overview)**
+- **[Data Source](#data-source)**
+- **[Tools](#tools)**
+- **[Data Cleaning / Preparation](#data-cleaning--preparation)**
+- **[Key Insights](#key-insights)**
+- **[Visualizations](#visualizations)**
+- **[Methodology Notes](#methodology-notes)**
+- **[References](#references)**
 
   
 
