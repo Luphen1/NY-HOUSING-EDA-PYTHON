@@ -75,16 +75,15 @@ duplicates)
 - treated using the IQR method (values cappe d, not
 deleted, at Q1 − 1.5×IQR and Q3 + 1.5×IQR).
 
-Column
-Values Capped
-**PRICE
-BEDS
-528
-218
-BATH
-PROPERTYSQFT
-108
-374**
+| Column | Value |
+| :---- | :----- |
+| PRICE | 528 |
+| BEDS | 218 |
+| BATH | 108 |
+| PROPERTYSQFT | 374 | 
+
+
+
 Capping was chosen over deletion to preserve sample
 size while limiting the influence of extreme values —
 high-end listings represent a real market segment, not
@@ -97,69 +96,51 @@ statistical influence.
 1. Price remains right-skewed even after treatment.
 **PRICE's mean ($1,144,499.90)** sits well above its
 **median ($825,000)**, and skewness dropped from
-**65.35 (raw)** to **1.06 (capped)** — a >60-fold reduction
+**65.35 (raw)** to **1.06 (capped)** — a > 60 fold reduction
 that confirms a small number of high-end listings
 dominate the raw distribution.
+
 2. Bathroom count predicts price more strongly than
-square footage. Correlation with PRICE: BATH (0.630)
-> PROPERTYSQFT (0.574) > BEDS (0.464). This is
-counterintuitive — square footage is usually assumed
-to dominate — and suggests bathroom count may act
+square footage. Correlation with PRICE: **BATH** (**0.630**) > **PROPERTYSQFT** (**0.574**) > **BEDS** (**0.464**). This is
+counterintuitive square footage is usually assumed
+to dominate and suggests bathroom count may act
 as a proxy for build quality or property tier rather than
 being purely a size signal.
+
+
 3. Location drives per-square-foot value more than
-any single structural feature. Manhattan
-**($1,220.58/sqft) and Dumbo ($1,200.54/sqft) lead the
-market by a wide margin, with a clear drop-off to the
-rest of the top 10 (roughly $530–$820/sqft) —
+any single structural feature. **Manhattan**
+**($1,220.58/sqft)** and **Dumbo** (**$1,200.54/sqft**) lead the
+market by a wide margin, with a clear drop off to the
+rest of the top 10 (roughly **$530–$820/sqft**) 
 indicating concentrated, location-specific premiums
 rather than a gradual citywide gradient.
-4. Engineered features inherit — and can compound
-—skew. The self-engineered 
-PRICE_PER_SQFT
+
+
+4. Engineered features inherit and can compound
+skew. The self-engineered 
+**PRICE_PER_SQFT**
  metric
-(mean $607.87, median $500.84) showed slightly
-higher skewness (1.29) than PRICE itself (1.06), since
+(**mean $607.87, median $500.84**) showed slightly
+higher skewness (**1.29**) than PRICE itself (**1.06**), since
 it's a ratio of two already right-skewed variables.
 
 
 
 ### Visualizations
-Figure
-Description
-Boxplots
-(before/after)
-Distribution
-histograms + KDE
-Outlier presence and the
-effect of IQR capping
-Shape and skewness of
-PRICE, PROPERTYSQFT,
-BEDS, BATH,
-PRICE_PER_SQFT
-Figure
-Description
-Correlation heatmap
-Pairplot
-Relationship strength
-across all five numeric
-variables
-Scatter:
-PRICE_PER_SQFT vs.
-BATH
-House type /
-bedroom / bathroom
-distributions
-Pairwise relationship
-shapes beyond single
-coefficients
-Follow-up visualization on
-the correlation finding
-Categorical and count
-based context
-Sublocality bar chart
-Top 10 areas by median
-price per square foot
+
+| Figure | Description |
+| :----- | :------- |
+| Boxplots (before/after)| Outlier presence and effect of IQR capping |
+| Distribution histograms + KDE | Shape and skewness of PRICE, PROPERTYSQFT, BEDS, BATH, PRICE_PER_SQFT |
+| Correlation heatmap| Relationship strength across all five numeric variables |
+| Pairplot | Pairwise relationship shapes beyond single coefficients |
+| Scatter:PRICE_PER_SQFT vs BATH| Follow up visualization on the correlation finding |
+| House type /bedroom / bathroom distributions | Categorical and count based context |
+| Sublocality bar chart | Top 10 areas by median price per square foot |
+
+
+
 
 
 ### Methodology Notes
@@ -167,7 +148,7 @@ Correlation over covariance for comparison:
 covariance values aren't comparable across
 variable pairs measured in different units (e.g.
 PRICE in millions vs. BATH as a small count), so
-correlation — which standardizes this — was used
+correlation which standardizes this was used
 for relationship-strength comparisons instead.
 A caveat on 
 PRICE_PER_SQFT correlations: since
@@ -175,32 +156,40 @@ this feature is mathematically derived from
 PRICE
  and 
 PROPERTYSQFT 
-, its correlation with
-those two columns partly reflects that built-in
+, it's correlation with
+those two columns partly reflects that built in
 relationship rather than an independent market
-finding. Its correlations with 
+finding. It's correlations with 
 BEDS
  and 
 remain genuinely informative.
 
 
 ### References
-BATH
-Anscombe, F. J. (1973). Graphs in statistical
+
+- Anscombe, F. J. (1973). Graphs in statistical
 analysis. The American Statistician, 27(1), 17–21.
-Cleveland, W. S., & McGill, R. (1984). Graphical
+
+
+- Cleveland, W. S., & McGill, R. (1984). Graphical
 perception: Theory, experimentation, and
 application to the development of graphical
 methods. Journal of the American Statistical
 Association, 79(387), 531–554.
-Few, S. (2009). Now You See It: Simple
+
+
+- Few, S. (2009). Now You See It: Simple
 Visualization Techniques for Quantitative Analysis.
 Analytics Press.
-Healy, K. (2018). Data Visualization: A Practical
+
+
+- Healy, K. (2018). Data Visualization: A Practical
 Introduction. Princeton University Press.
-Nelgiriyewithana, N. (2024). New York Housing
-Market Kaggle.
-Tukey, J. W. (1977). Exploratory Data Analysis.
+
+- Nelgiriyewithana, N. (2024). New York Housing
+Market(Kaggle).
+
+- Tukey, J. W. (1977). Exploratory Data Analysis.
 Addison-Wesley.
 
 
@@ -213,5 +202,4 @@ Addison-Wesley.
 
 
 
-dataset
-└── README.md                  # This file
+
