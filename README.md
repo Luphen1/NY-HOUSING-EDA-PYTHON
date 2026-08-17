@@ -14,7 +14,35 @@ market, examining price, size, and location patterns
 across **4,5878** property listings. Built as part of IU
 International University of Applied Sciences
 **DLBDSEDAV01** (Exploratory Data Analysis and
-Visualization) coursework.
+Visualization) coursework examination project.
+
+
+---------------------------------------------------------------------------------
+Table of contents
+
+
+- **[Project Overview](Project_Overview)**
+
+  
+- **[Data Source](Data_Source)**
+
+  
+- **[Tools](Tools)**
+
+  
+- **[Data Cleaning / Preparation](Data_Cleaning_/Preparation)**
+
+  
+- **[Key Insights](Key_Insights)**
+
+  
+- **[Visualizations](Visualizations)**
+
+  
+- **[Methodology Notes](Methodology_Notes)**
+
+  
+- **[References](References)**
 
 
 ### Project Overview
@@ -68,7 +96,7 @@ duplicates)
 - Environment: Jupyter Notebook
 
 
-### Data Cleaning & Preparation
+### Data Cleaning / Preparation
 - Removed 214 duplicate records
 - Verified no missing values across all columns
 - Identified outliers visually via boxplots, then
